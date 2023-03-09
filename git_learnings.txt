@@ -1,0 +1,68 @@
+This are the commands that I learnt from youtube video  
+
+never create a github repositories with readme file cause you won't know the commands to uplaod then , but if you accidently create a file use this commands 
+git remote add origin https://github.com/Shiva-kumar-jadipalli/learning_git_tutorial.git ( paste original link here ) 
+git branch -M main
+git push -u origin main
+
+ 
+
+git commands  
+
+1) making a local folder to upload it into git  
+
+    1.1) 'git init ' with this we can make a normal folder into a git repository locally so that we can use all git commands  
+
+ 
+
+ 
+
+    1.2)Do all functions like "git status" and " git add . " and also " git commit -m 'Title ' -m ' Description (optional) ' , " git commit -am 'Title' -m ' Description (optional) " this feature can commit without the need of using " git add . "  
+
+        1.2.1) " git reset " if you " git add . " something that you don't want to then use this command  
+
+        1.2.2) " git reset HEAD~2 " tells git to undo the last commit two steps 
+
+        1.2.3) " git log " to see all commits  
+
+        1.2.4)" git reset  79f4fd7b158ab3c24acbc2883efaf849251ddb8f " will reset upto the commit with this hash message      
+
+        1.2.5) " git reset --hard 79f4fd7b158ab3c24acbc2883efaf849251ddb8f " to reset to that point and delete before messages 
+
+ 
+
+ 
+
+    1.3)To add it in a new repository 
+
+        1.3.1) we first need to create a new repository in github and it provides with an ssh key copy it 
+
+        1.3.2) Now in our local terminal we type " git remote add origin ssh.key " with these we can set the target  , type 'git remote –v '  to check all the remote repositories that are added  
+
+        1.3.3) All we need to do is that " git push --set-upstream origin master " that's it our code is now online now we can refresh our webpage to see the results   
+
+2) Working with branches  
+
+    2.1) 'git branch ' it let's you see all the branches in the repository and '* ' indicates the branch you are in  
+
+ 
+
+ 
+
+    2.2) "git checkout -b name_something " tells it to create a new branch with name_something as title also use ' git checkout name_something 'to switch between branchs 
+
+        2.2.1) " git branch -d name_something " to delete the branch  
+
+    2.3) " git diff branch-name " shows the difference between given branch and master branch  
+
+    2.4) " git merge branch-name" merges with master branch  
+
+    2.5) pull request , if there are multiple feature branches in the repository pull request can make changes in a folder and files and ask the owner to change merge it into the master branch ( ' don't know myself check it in internet ' )  
+
+        2.5.1) once the changes are made in the repository from github online you can see it in local repository by " git pull "  
+
+ 
+
+ 
+
+ 

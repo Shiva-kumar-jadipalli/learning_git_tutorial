@@ -1,0 +1,5 @@
+this is to see how github works 
+
+git remote add origin https://github.com/Shiva-kumar-jadipalli/learning_git_tutorial.git
+git branch -M main
+git push -u origin main
